@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 
 <html>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="Styles/Estilos.css">
 	<script src="semantic/dist/semantic.min.js"></script>
 
 	<head>
-		<title>Materias</title>
+		<title>Registar Materia</title>
 	</head>
 
 	<body>
@@ -46,10 +47,10 @@
       </div>
 
       <!--Form Materia-->
-      <div class="ui segment">
+      <div id="Registrar" class="ui segment">
         <center><h2>Registrar Materia</h2></center>
       </br>
-        <form class="ui form">
+        <form class="ui form" method="post" action="../controllers/controller_materia.php">
           <div class="field">
               <div class="two fields">
                 <div class="field">
@@ -80,7 +81,7 @@
     <!--Footer-->
     <div class="ui center aligned inverted darkgreen vertical footer segment" style="background-color: #0B0B3B">
        <div class="ui horizontal inverted small divided link list">
-           
+
         </div>
     </div>
     <!--Fin Footer-->
