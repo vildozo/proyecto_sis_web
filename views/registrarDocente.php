@@ -1,18 +1,12 @@
-<?php
-	
-
-?>
 <!DOCTYPE HTML>
 
 <html>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-	<link rel="stylesheet" type="text/css" href="Styles/Estilos.css">
+	<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
 	<script src="semantic/dist/semantic.min.js"></script>
-
 	<head>
 		<title>Plantel Docente</title>
-
-		<link rel="stylesheet" type="text/css" href="mystyle.css">
 	</head>
 
 	<body>
@@ -51,81 +45,99 @@
 			<a class="active item">Plantel Docente</a>
 			<a class="item">Cursos de Formación Continua</a>
 		</div>
-		
-		<h2>Registrar docente</h2>
-		<table>
-			<tr>
-				<td>Nombre:</td>
-				<td>
-					<div class="ui corner labeled input">
-					  <input placeholder="Nombre" type="text">
-					  <div class="ui corner label">
-					    <i class="asterisk icon"></i>
-					  </div>
-					</div>
-				</td>
-				<td>Apellido:</td>
-				<td>
-					<div class="ui corner labeled input">
-					  <input placeholder="Apellido" type="text">
-					  <div class="ui corner label">
-					  	<i class="asterisk icon"></i>
-					  </div>
-					</div>
-				</td>
-			</tr>
 
-			<tr>
-				<td>Direccion</td>
-				<td>
-					<div class="ui corner labeled input">
-					  <input placeholder="Direccion" type="text">
-					  <div class="ui corner label">
-					  	<i class="asterisk icon"></i>
-					  </div>
+		<div class="ui segment">
+			<center><h2>Registrar Docente</h2></center>
+			<br>
+			<form class="ui form" method="post" action="../controllers/docentes/crearDocente.php">
+				<div class="field">
+					<div class="four wide field">
+						<label>CI</label>
+						<div class="ui corner labeled input">
+							<input type="number" name="ci" placeholder="Carnet de Identidad">
+							<div class="ui corner label">
+								<i class="asterisk icon"></i>
+							</div>
+						</div>
 					</div>
-				</td>
-				<td>Carnet de Identidad</td>
-				<td>
-					<div class="ui corner labeled input">
-					  <input placeholder="Carnet de Identidad..." type="text">
-					  <div class="ui corner label">
-					  	<i class="asterisk icon"></i>
-					  </div>
+				</div>
+				<div class="field">
+					<div class="two fields">
+						<div class="field">
+							<label>Nombre</label>
+							<div class="ui corner labeled input">
+								<input type="text" name="nombre" placeholder="Nombre">
+								<div class="ui corner label">
+									<i class="asterisk icon"></i>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<label>Apellido</label>
+							<div class="ui corner labeled input">
+								<input type="text" name="apellido" placeholder="Apellido">
+								<div class="ui corner label">
+									<i class="asterisk icon"></i>
+								</div>
+							</div>
+						</div>
 					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td>Grado Academico</td>
-				<td>
-					<select class="ui fluid search dropdown" multiple="">
-					  <option value="">Seleccione su grado Academico</option>
-					  <option value="">Licenciado</option>
-					  <option value="AL">Masterado</option>
-					  <option value="AK">Doctorado</option>
-					</select>
-				</td>
-				<td>Estado Laboral</td>
-				<td>
-					<div class="ui toggle checkbox">
-					  <input name="public" type="checkbox">
-					  <label>Docente esta vigente</label>
+				</div>
+				<div class="field">
+					<div class="two fields">
+						<div class="field">
+							<label>Dirección</label>
+							<div class="ui corner labeled input">
+								<input type="text" name="direccion" placeholder="Av. América 1234">
+								<div class="ui corner label">
+									<i class="asterisk icon"></i>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<label>Teléfono</label>
+							<div class="ui corner labeled input">
+								<input type="text" name="telefono" placeholder="Teléfono / Celular">
+								<div class="ui corner label">
+									<i class="asterisk icon"></i>
+								</div>
+							</div>
+						</div>
 					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td>Telefono</td>
-				<td></td>
-				<td>Celular</td>
-				<td></td>
-			</tr>
-
-		</table>
-		
+				</div>
+				<div class="field">
+					<div class="two fields">
+						<div class="field">
+							<label>Grado Académico</label>
+							<select class="ui fluid dropdown">
+								<option value="">Seleccione su grado Académico</option>
+							  <option value="licenciado">Licenciado</option>
+							  <option value="masterado">Masterado</option>
+							  <option value="doctorado">Doctorado</option>
+							</select>
+						</div>
+						<div class="field">
+							<label>Estado Laboral</label>
+							<select class="ui fluid dropdown">
+								<option value="">Seleccione su Estado Laboral</option>
+							  <option value="activo">Vigente</option>
+							  <option value="inactivo">No Vigente</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<br>
+				<center>
+					<button type="submit" class="positive ui button" name="registrar_docente">Registrar</button>
+				</center>
+			</form>
+		</div>
 	</div>
-
+	<script>
+		$(document).ready(function (){
+			$('.ui.dropdown').dropdown();
+		});
+	</script>
 </br>
 	<!--Footer-->
 	<div class="ui sticky segment fluid inverted darkgreen vertical footer" style="background-color: #0B0B3B" >
@@ -159,8 +171,3 @@
 
   </body>
 </html>
-
-
-
-
-
