@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 
 <html>
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-	<script src="semantic/dist/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+	<script src="../semantic/dist/semantic.min.js"></script>
 
 	<head>
 		<title>Plantel Docente</title>
@@ -21,13 +21,13 @@
 
 				 <div class="three wide column">
 					 <div class="ui small image">
-	  					<img src="imgs/logoucb.gif">
+	  					<img src="../imgs/logoucb.gif">
 						</div>
 					</div>
 
 					<div class="eleven wide column">
 						<div class="ui massive image">
-							<img src="imgs/Ingenieria-de-Sistemas.jpg">
+							<img src="../imgs/Ingenieria-de-Sistemas.jpg">
 						</div>
 					</div>
 
@@ -50,7 +50,7 @@
 			<div class="ui two column grid">
 				<div class="row">
 					<div class="four wide column">
-  					<img class="ui small image" src="imgs/image.png">
+  					<img class="ui small image" src="../imgs/image.png">
 					</div>
 					<div class="twelve wide column">
 						<a href="#" class="ui header" >Nombre del Docente</a>
@@ -70,7 +70,7 @@
 			<div class="ui two column grid">
 				<div class="row">
 					<div class="four wide column">
-  					<img class="ui small image" src="imgs/image.png">
+  					<img class="ui small image" src="../imgs/image.png">
 					</div>
 					<div class="twelve wide column">
 						<a href="#" class="ui header" >Nombre del Docente</a>
@@ -90,7 +90,7 @@
 			<div class="ui two column grid">
 				<div class="row">
 					<div class="four wide column">
-  					<img class="ui small image" src="imgs/image.png">
+  					<img class="ui small image" src="../imgs/image.png">
 					</div>
 					<div class="twelve wide column">
 						<a href="#" class="ui header" >Nombre del Docente</a>

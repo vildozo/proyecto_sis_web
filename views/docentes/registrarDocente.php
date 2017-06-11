@@ -2,9 +2,9 @@
 
 <html>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
 	<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
-	<script src="semantic/dist/semantic.min.js"></script>
+	<script src="../semantic/dist/semantic.min.js"></script>
 	<head>
 		<title>Plantel Docente</title>
 	</head>
@@ -22,13 +22,13 @@
 
 				 <div class="three wide column">
 					 <div class="ui small image">
-	  					<img src="imgs/logoucb.gif">
+	  					<img src="../imgs/logoucb.gif">
 						</div>
 					</div>
 
 					<div class="eleven wide column">
 						<div class="ui massive image">
-							<img src="imgs/Ingenieria-de-Sistemas.jpg">
+							<img src="../imgs/Ingenieria-de-Sistemas.jpg">
 						</div>
 					</div>
 
@@ -49,7 +49,7 @@
 		<div class="ui segment">
 			<center><h2>Registrar Docente</h2></center>
 			<br>
-			<form class="ui form" method="post" action="../controllers/docentes/crearDocente.php">
+			<form class="ui form" method="post" action="../../controllers/docentes/crearDocente.php">
 				<div class="field">
 					<div class="four wide field">
 						<label>CI</label>
@@ -109,7 +109,7 @@
 					<div class="two fields">
 						<div class="field">
 							<label>Grado Académico</label>
-							<select class="ui fluid dropdown">
+							<select class="ui fluid dropdown" name="grado_academico">
 								<option value="">Seleccione su grado Académico</option>
 							  <option value="licenciado">Licenciado</option>
 							  <option value="masterado">Masterado</option>
@@ -118,7 +118,7 @@
 						</div>
 						<div class="field">
 							<label>Estado Laboral</label>
-							<select class="ui fluid dropdown">
+							<select class="ui fluid dropdown" name="estado_laboral">
 								<option value="">Seleccione su Estado Laboral</option>
 							  <option value="activo">Vigente</option>
 							  <option value="inactivo">No Vigente</option>
