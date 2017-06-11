@@ -47,10 +47,10 @@
       </div>
 
       <!--Form Materia-->
-      <div id="Registrar" class="ui segment">
+      <div class="ui segment">
         <center><h2>Registrar Materia</h2></center>
       </br>
-        <form class="ui form" method="post" action="../controllers/controller_materia.php">
+        <form  class="ui form" method="post" action="../controllers/crearMateria.php">
           <div class="field">
               <div class="two fields">
                 <div class="field">
@@ -68,7 +68,7 @@
             <input type="text" name="nombre" placeholder="Nombre de Asignatura">
           </div>
           <center>
-            <button type="submit" class="positive ui button">Aceptar</button>
+            <button type="submit" class="positive ui button" name="submit">Aceptar</button>
             <button class="negative ui button">Cancelar</button>
           </center>
         </form>
