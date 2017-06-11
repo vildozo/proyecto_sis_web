@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 
 <html>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 	<script src="semantic/dist/semantic.min.js"></script>
 
@@ -47,15 +48,9 @@
 
 		<!--Lista de Materias-->
 		<div class="ui segment">
-      <div class="ui relaxed divided list">
-        <div class="item">
-          <i class="large github middle aligned icon"></i>
-          <div class="content">
-            <a class="header">Semantic-Org/Semantic-UI</a>
-            <div class="description">Updated 10 mins ago</div>
-          </div>
-        </div>
-      </div>
+			<?php
+				include("../controllers/listarMaterias.php");
+			?>
     </div>
     <!--Fin Lista-->
   </div>
