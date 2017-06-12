@@ -24,7 +24,12 @@
                     <button name='ver_docente' type='submit' class='ui orange button'>Ver</button>
                   </form>
                 </td>";
-          echo "<td><a href=#>Editar</a></td>";
+          echo "<td>
+                   <form class='ui form' action='../views/editarDocente.php'>
+                        <input name='ci' type='hidden' value=".$row['ci'].">
+                        <button name='editar_docente' type='submit' class='ui positive button'>Editar</button>
+                    </form>
+                    </td>";
         }
         $conn->close();
     ?>
