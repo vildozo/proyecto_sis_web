@@ -160,24 +160,7 @@
     });
   </script>
 </br>
-        <h3 class="ui horizontal divider header">
-          <i class="book icon"></i>
-            Formación Académica
-        </h3>
-        <p><?php echo $row['formacion_academica'] ?></p>
-        <br>
-        <h3 class="ui horizontal divider header">
-          <i class="student icon"></i>
-            Formación Profesional
-        </h3>
-        <p><?php echo $row['formacion_profesional'] ?></p>
-        <br>
-        <h3 class="ui horizontal divider header">
-          <i class="user icon"></i>
-            Historial de Trabajo
-        </h3>
-        <p><?php echo $row['historial_trabajo'] ?></p>
-        <br>
+       
       </div>
     </div>
   </body>
