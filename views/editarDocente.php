@@ -58,8 +58,12 @@
         <div class="ui segment">
       <center><h2>Editar Docente</h2></center>
       <br>
-      <form class="ui form" method="post" action="../controllers/updateDocente.php">
+      <form class="ui form" method="post" enctype="multipart/form-data" action="../controllers/updateDocente.php">
         <h3 class="ui dividing header">Información Básica</h3>
+        <div class="field">
+					<label>Foto</label>
+					<input name="imagen" size="30" type="file" />
+				</div>
         <div class="field">
           <div class="four wide field">
             <label>CI</label>
