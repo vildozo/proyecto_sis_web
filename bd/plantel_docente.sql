@@ -22,6 +22,8 @@
 
 # Dump of table docente
 # ------------------------------------------------------------
+CREATE DATABASE IF NOT EXISTS `plantel_docente` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `plantel_docente`;
 
 DROP TABLE IF EXISTS `docente`;
 
