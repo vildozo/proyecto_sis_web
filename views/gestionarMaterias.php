@@ -48,10 +48,26 @@
 
 		<!--Lista de Materias-->
 		<div class="ui segment">
-			<?php
-				include("../controllers/listarMaterias.php");
-			?>
-    </div>
+			<center><h2>Lista de Materias</h2></center>
+				<a href="registrarMateria.php" class="ui right floated positive button">Nueva Materia</a>
+			</br>
+				<table class="ui celled table">
+				  <thead>
+				    <tr>
+				      <th>Código</th>
+				      <th>Sigla</th>
+				      <th>Nombre</th>
+				      <th></th>
+				      <th></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+					<?php
+						include("../controllers/listarMaterias.php")
+					 ?>
+				 </tbody>
+				</table>
+	</div>
     <!--Fin Lista-->
   </div>
   </br>
