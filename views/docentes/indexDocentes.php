@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 
 <html>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
 	<script src="../semantic/dist/semantic.min.js"></script>
 
@@ -47,7 +48,10 @@
 
 		<!--Docente-->
 		<div class="ui segment">
-			<div class="ui two column grid">
+			<?php
+				include("../../controllers/docentes/listarDocentes.php")
+			 ?>
+			<!--div class="ui two column grid">
 				<div class="row">
 					<div class="four wide column">
   					<img class="ui small image" src="../imgs/image.png">
@@ -62,11 +66,11 @@
 					</div>
 					</div>
 				</div>
-			</div>
+			</div-->
 		<!--Fin Docente-->
 
 		<!--Docente-->
-		<div class="ui segment">
+		<!--div class="ui segment">
 			<div class="ui two column grid">
 				<div class="row">
 					<div class="four wide column">
@@ -82,11 +86,11 @@
 					</div>
 					</div>
 				</div>
-			</div>
+			</div-->
 		<!--Fin Docente-->
 
 		<!--Docente-->
-		<div class="ui segment">
+		<!--div class="ui segment">
 			<div class="ui two column grid">
 				<div class="row">
 					<div class="four wide column">
@@ -102,7 +106,7 @@
 					</div>
 					</div>
 				</div>
-			</div>
+			</div-->
 		<!--Fin Docente-->
 	</div>
 

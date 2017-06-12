@@ -13,7 +13,7 @@
   VALUES ('$ci', '$nombre', '$apellido', '$direccion', '$telefono', '$grado_academico', '$estado_laboral')";
 
   if ($conn->query($sql) === TRUE) {
-    header("Location: ../views/docentes/indexDocentes.php");
+    header("Location: ../../views/docentes/indexDocentes.php");
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
