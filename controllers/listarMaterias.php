@@ -13,7 +13,7 @@ if ($result->num_rows > 0) {
         echo "<td>".$row['sigla']."</td>";
         echo "<td>".$row['nombre']."</td>";
         echo "<td>
-            <form class='ui form' method = 'post' action = '../controllers/editarMateria.php'>
+            <form class='ui form' method = 'post' action = '../views/editarMateria.php'>
               <input name = 'codigo' type = 'hidden' value = ".$row["codigo"].">
               <input name = 'sigla' type = 'hidden' value = ".$row["sigla"].">
               <input name = 'nombre' type = 'hidden' value = ".$row["nombre"].">
