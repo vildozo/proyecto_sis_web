@@ -27,6 +27,7 @@ if ($result->num_rows > 0) {
               <strong>Historial de Trabajo:</strong>
 
               <?php echo $row["historial_trabajo"]; ?>
+          
           </div>
           </div>
         </div>

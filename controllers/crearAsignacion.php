@@ -2,10 +2,10 @@
 include("../bd/connection.php");
 
 $ci = $_POST['docente'];
-$codigo = $_POST['materia'];
+$nombre = $_POST['materia'];
 
-$sql = "INSERT INTO materiasDictadas (ci,codigo)
-VALUES ('$ci','$codigo')";
+$sql = "INSERT INTO materiasDictadas (ci,nombre)
+VALUES ('$ci','$nombre')";
 
 
 if ($conn->query($sql) === TRUE) {

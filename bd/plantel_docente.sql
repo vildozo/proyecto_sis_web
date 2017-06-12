@@ -46,9 +46,9 @@ CREATE TABLE IF NOT EXISTS `materia` (
 CREATE TABLE IF NOT EXISTS `materiasDictadas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `ci` int(11) NOT NULL,
-  `codigo` int(11) NOT NULL,
+  `nombre` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

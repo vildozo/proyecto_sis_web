@@ -11,7 +11,7 @@ if ($result->num_rows > 0) {
     <?php
     while($row = $result->fetch_assoc()) {
     ?>
-    	<option value="<?php echo $row['codigo'];?>">
+    	<option value="<?php echo $row['nombre'];?>">
     		<?php echo $row["nombre"]; ?>
     	</option>
     <?php
