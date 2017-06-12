@@ -57,12 +57,35 @@
   </br>
   </br>
 
-    <!--Footer-->
-    <div class="ui center aligned inverted darkgreen vertical footer segment" style="background-color: #0B0B3B">
-       <div class="ui horizontal inverted small divided link list">
+</br>
+	<!--Footer-->
+	<div class="ui sticky segment fluid inverted darkgreen vertical footer" style="background-color: #0B0B3B" >
+		 <div class="ui aligned container">
+			 <div class="ui stackable inverted divided grid">
 
-        </div>
-    </div>
-    <!--Fin Footer-->
+				 <div class="eight wide column">
+				 </div>
+
+				 <div class="eight wide column">
+					 <div class="ui segment basic">
+
+
+						 <h4 class="ui inverted header">Síguenos en:</h4>
+						 <div class="ui center aligned segment basic">
+							 <a class="ui circular facebook icon button"><i class="facebook icon"></i></a>
+							 <a class="ui circular twitter icon button"><i class="twitter icon"></i></a>
+							 <button class="ui circular google plus icon button"><i class="google plus icon"></i></button>
+							 <button class="ui circular instagram icon button"><i class="instagram icon"></i></button>
+							 <button class="ui circular youtube icon button"><i class="youtube icon"></i></button></br>
+						 </div>
+					 </div>
+				 </div>
+			 </div>
+		 </br></br></br>
+			 <div class="ui inverted section divider"></div>
+		 </br></br></br></br>
+		 </div>
+	</div>
+ <!--Fin de Footer-->
   </body>
 </html>
