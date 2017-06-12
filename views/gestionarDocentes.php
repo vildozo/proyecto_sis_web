@@ -46,13 +46,25 @@
 			<!--Docente-->
 			<div class="ui segment">
 	      <center><h2>Lista de Docentes</h2></center>
-				<form action="registrarDocente.php">
-					<button class="ui right floated positive button">Nuevo Docente</button>
-				</form><br><br>
+					<a href="registrarDocente.php" class="ui right floated positive button">Nuevo Docente</a>
+					<table class="ui celled table">
+					  <thead>
+					    <tr>
+					      <th>Ci</th>
+					      <th>Nombre</th>
+					      <th>Apellido</th>
+					      <th></th>
+					      <th></th>
+					    </tr>
+					  </thead>
+					  <tbody>
 				<?php
 					include("../controllers/listarDocentes.php")
 				 ?>
+			 </tbody>
+		 </table>
 		</div>
+	</div>
 
 	</br>
 		<!--Footer-->
