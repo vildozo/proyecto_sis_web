@@ -17,14 +17,16 @@ if ($result->num_rows > 0) {
           <div class="twelve wide column">
             
              
-                    <a href="'../views/verDocente.php'" class="ui header" ><?php echo $row["nombre"]." ".$row["apellido"]; ?></a>
-                  </form>
-            
+                    <a href="#" class="ui header" ><?php echo $row["nombre"]." ".$row["apellido"]; ?></a>
           </br>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              <strong>Formaci&oacute;n Academica:</strong>
+              
+              <?php echo $row["formacion_academica"]; ?>
+
+          </br>
+              <strong>Historial de Trabajo:</strong>
+              
+              <?php echo $row["historial_trabajo"]; ?>
           </div>
           </div>
         </div>
