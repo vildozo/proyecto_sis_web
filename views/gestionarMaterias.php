@@ -1,7 +1,4 @@
 <!DOCTYPE HTML>
-<?php
-
-?>
 
 <html>
 	<meta charset="utf-8">
@@ -44,19 +41,37 @@
 
 		<div class="ui inverted menu" style="margin:auto; background-color: #0B0B3B;">
 			<a class="item">Noticias</a>
-			<a class="item">Informaci&oacute;n General</a>
+			<a class="item">Información General</a>
 			<a class="active item">Plantel Docente</a>
-			<a class="item">Cursos de Formaci&oacute;n Continua</a>
+			<a class="item">Cursos de Formación Continua</a>
 		</div>
 
-
-<?php
-				include("../controllers/selectDocentes.php");
-?>
-
-
-		
+		<!--Lista de Materias-->
+		<div class="ui segment">
+			<center><h2>Lista de Materias</h2></center>
+				<a href="registrarMateria.php" class="ui right floated positive button">Nueva Materia</a>
+			</br>
+				<table class="ui celled table">
+				  <thead>
+				    <tr>
+				      <th>Código</th>
+				      <th>Sigla</th>
+				      <th>Nombre</th>
+				      <th></th>
+				      <th></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+					<?php
+						include("../controllers/listarMaterias.php")
+					 ?>
+				 </tbody>
+				</table>
 	</div>
+    <!--Fin Lista-->
+  </div>
+  </br>
+  </br>
 
 </br>
 	<!--Footer-->
@@ -88,6 +103,5 @@
 		 </div>
 	</div>
  <!--Fin de Footer-->
-
   </body>
 </html>
