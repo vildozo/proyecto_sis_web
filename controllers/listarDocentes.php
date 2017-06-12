@@ -10,13 +10,13 @@
       echo "<td>
             <form class='ui form' action='../views/verDocente.php'>
               <input name='ci' type='hidden' value=".$row['ci'].">
-                <button name='ver_docente' type='submit' class='ui orange button'>Ver</button>
+                <button name='ver_docente' type='submit' class='ui yellow button'>Ver</button>
               </form>
             </td>";
       echo "<td>
               <form class='ui form' action='../views/editarDocente.php'>
                 <input name='ci' type='hidden' value=".$row['ci'].">
-                  <button name='editar_docente' type='submit' class='ui positive button'>Editar</button>
+                  <button name='editar_docente' type='submit' class='ui orange button'>Editar</button>
                 </form>
               </td>";
     }
