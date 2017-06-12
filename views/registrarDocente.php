@@ -2,7 +2,7 @@
 
 <html>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 	<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
 	<script src="../semantic/dist/semantic.min.js"></script>
 	<head>
@@ -22,13 +22,13 @@
 
 				 <div class="three wide column">
 					 <div class="ui small image">
-	  					<img src="../imgs/logoucb.gif">
+	  					<img src="imgs/logoucb.gif">
 						</div>
 					</div>
 
 					<div class="eleven wide column">
 						<div class="ui massive image">
-							<img src="../imgs/Ingenieria-de-Sistemas.jpg">
+							<img src="imgs/Ingenieria-de-Sistemas.jpg">
 						</div>
 					</div>
 
@@ -49,7 +49,7 @@
 		<div class="ui segment">
 			<center><h2>Registrar Docente</h2></center>
 			<br>
-			<form class="ui form" method="post" action="../../controllers/docentes/crearDocente.php">
+			<form class="ui form" method="post" action="../controllers/crearDocente.php">
 				<div class="field">
 					<div class="four wide field">
 						<label>CI</label>
