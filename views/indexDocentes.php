@@ -44,12 +44,21 @@
 
 		<div class="ui inverted menu" style="margin:auto; background-color: #0B0B3B;">
 			<a class="item">Noticias</a>
-			<a class="item">Información General</a>
+			<a class="item">Informaci&oacute;n General</a>
 			<a class="active item">Plantel Docente</a>
-			<a class="item">Cursos de Formación Continua</a>
+			<a class="item">Cursos de Formaci&oacute;n Continua</a>
 		</div>
 
-		<!--Docente-->
+
+<?php
+				include("../controllers/selectDocentes.php");
+?>
+
+
+
+
+
+		<!--Docente
 		<div class="ui segment">
 			<div class="ui two column grid">
 				<div class="row">
@@ -69,45 +78,14 @@
 			</div>
 		<!--Fin Docente-->
 
-		<!--Docente-->
-		<div class="ui segment">
-			<div class="ui two column grid">
-				<div class="row">
-					<div class="four wide column">
-  					<img class="ui small image" src="imgs/image.png">
-					</div>
-					<div class="twelve wide column">
-						<a href="#" class="ui header" >Nombre del Docente</a>
-					</br>
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-				et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-				ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-					</div>
-					</div>
-				</div>
-			</div>
-		<!--Fin Docente-->
+		-->
 
-		<!--Docente-->
-		<div class="ui segment">
-			<div class="ui two column grid">
-				<div class="row">
-					<div class="four wide column">
-  					<img class="ui small image" src="imgs/image.png">
-					</div>
-					<div class="twelve wide column">
-						<a href="#" class="ui header" >Nombre del Docente</a>
-					</br>
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-				et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-				ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-					</div>
-					</div>
-				</div>
-			</div>
-		<!--Fin Docente-->
+
+
+
+
+
+		
 	</div>
 
 </br>
