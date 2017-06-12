@@ -1,6 +1,6 @@
 <?php
     include("../bd/connection.php");
-    $sentence = "SELECT * FROM docente WHERE estado_laboral='activo'";
+    $sentence = "SELECT * FROM docente";
     $result = $conn->query($sentence);
     while ($row = $result->fetch_assoc()) {
       echo "<tr>";

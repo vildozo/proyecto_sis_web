@@ -1,7 +1,4 @@
 <!DOCTYPE HTML>
-<?php
-
-?>
 
 <html>
 	<meta charset="utf-8">
@@ -49,13 +46,12 @@
 			<a class="item">Cursos de Formaci&oacute;n Continua</a>
 		</div>
 
-
 <?php
 				include("../controllers/selectDocentes.php");
 ?>
 
 
-		
+
 	</div>
 
 </br>

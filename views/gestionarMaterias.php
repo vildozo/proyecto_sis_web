@@ -6,7 +6,7 @@
 	<script src="semantic/dist/semantic.min.js"></script>
 
 	<head>
-		<title>Plantel Docente</title>
+		<title>Gestionar Materias</title>
 	</head>
 
 	<body>
