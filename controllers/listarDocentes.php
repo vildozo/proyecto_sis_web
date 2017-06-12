@@ -9,7 +9,7 @@
   </thead>
   <tbody>
     <?php
-      include("../../bd/connection.php");
+      include("../bd/connection.php");
       $sentence = "SELECT * FROM docente";
       $result = $conn->query($sentence);
         while ($row = $result->fetch_assoc()) {
