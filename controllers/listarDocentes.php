@@ -19,7 +19,7 @@
           echo "<td>".$row['nombre']."</td>";
           echo "<td>".$row['apellido']."</td>";
           echo "<td>
-                  <form class='ui form' action='../controllers/verDocente.php'>
+                  <form class='ui form' action='../views/verDocente.php'>
                     <input name='ci' type='hidden' value=".$row['ci'].">
                     <button name='ver_docente' type='submit' class='ui orange button'>Ver</button>
                   </form>
