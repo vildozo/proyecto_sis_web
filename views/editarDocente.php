@@ -48,7 +48,7 @@
       </div>
     </div>
 
-   
+
 			<!--Docente-->
       <div class="ui segment">
         <h3 class="ui horizontal divider header">
@@ -138,15 +138,15 @@
         </div>
         <h3 class="ui dividing header">Formación Académica</h3>
         <div class="field">
-          <textarea rows="2" name="formacion_academica" value="<?php echo $row["formacion_academica"];?>"></textarea>
+          <textarea rows="2" name="formacion_academica" value=""><?php echo $row["formacion_academica"];?></textarea>
         </div>
         <h3 class="ui dividing header">Formación Profesional</h3>
         <div class="field">
-          <textarea rows="2" name="formacion_profesional" value="<?php echo $row["formacion_profesional"];?>" ></textarea>
+          <textarea rows="2" name="formacion_profesional" value="" ><?php echo $row["formacion_profesional"];?></textarea>
         </div>
         <h3 class="ui dividing header">Historial de Trabajo</h3>
         <div class="field">
-          <textarea rows="2" name="historial_trabajo" value="<?php echo $row["historial_trabajo"];?>"></textarea>
+          <textarea rows="2" name="historial_trabajo" value=""><?php echo $row["formacion_profesional"];?></textarea>
         </div><br>
         <center>
           <button type="submit" class="positive ui button" name="editar_docente">Actualizar</button>
@@ -160,7 +160,7 @@
     });
   </script>
 </br>
-       
+
       </div>
     </div>
   </body>
