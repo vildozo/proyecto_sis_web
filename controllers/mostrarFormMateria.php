@@ -10,15 +10,15 @@
           <form  class='ui form' method='post' action='../controllers/updateSubject.php'>
             <div class='field'>
                 <label>Código: $codigo</label>
-                <input type='hidden' name='codigo' value = $codigo>
+                <input type='hidden' name='codigo' value = \"$codigo\">
             </div>
             <div class='field'>
               <label>Sigla</label>
-              <input type='text' name='sigla' value = $sigla>
+              <input type='text' name='sigla' value = \"$sigla\">
             </div>
             <div class='field'>
               <label>Nombre</label>
-              <input type='text' name='nombre' value = $nombre>
+              <input type='text' name='nombre' value = \"$nombre\">
             </div>
             <center>
               <button type='submit' class= 'positive ui button' name='submit'>Aceptar</button>
