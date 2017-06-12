@@ -121,42 +121,42 @@
               <label>Grado Académico</label>
               <select class="ui fluid dropdown" name="grado_academico" >
                 <option value="">Seleccione su grado Académico</option>
-                <option 
-                <?php 
-                  if(($row["grado_academico"])=="licenciado"){
+                <option
+                <?php
+                  if(($row["grado_academico"])=="Licenciado"){
                   echo "selected";}
                 ?>
-                value="licenciado">Licenciado</option>
-                <option 
-                <?php 
-                  if(($row["grado_academico"])=="masterado"){
+                value="Licenciado">Licenciado</option>
+                <option
+                <?php
+                  if(($row["grado_academico"])=="Masterado"){
                   echo "selected";}
                 ?>
-                value="masterado">Masterado</option>
-                <option 
-                <?php 
-                  if(($row["grado_academico"])=="doctorado"){
+                value="Masterado">Masterado</option>
+                <option
+                <?php
+                  if(($row["grado_academico"])=="Doctorado"){
                   echo "selected";}
                 ?>
-                value="doctorado">Doctorado</option>
+                value="Doctorado">Doctorado</option>
               </select>
             </div>
             <div class="field">
               <label>Estado Laboral</label>
               <select class="ui fluid dropdown" name="estado_laboral">
                 <option value="">Seleccione su Estado Laboral</option>
-                <option 
-                <?php 
-                if(($row["estado_laboral"])=="activo"){
+                <option
+                <?php
+                if(($row["estado_laboral"])=="Activo"){
                   echo "selected";}
                 ?>
-                value="activo">Vigente</option>
-                <option 
-                 <?php 
-                if(($row["estado_laboral"])=="inactivo"){
+                value="Activo">Vigente</option>
+                <option
+                 <?php
+                if(($row["estado_laboral"])=="Inactivo"){
                   echo "selected";}
                 ?>
-                value="inactivo">No Vigente</option>
+                value="Inactivo">No Vigente</option>
               </select>
             </div>
           </div>
