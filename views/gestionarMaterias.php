@@ -49,6 +49,7 @@
 		<!--Lista de Materias-->
 		<div class="ui segment">
 			<center><h2>Lista de Materias</h2></center>
+			<a href="gestionarDocentes.php" class="ui right floated positive button">Ir a Docentes</a>
 				<a href="registrarMateria.php" class="ui right floated positive button">Nueva Materia</a>
 			</br><br>
 				<table class="ui celled table">
