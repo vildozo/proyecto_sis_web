@@ -25,9 +25,12 @@
 CREATE DATABASE IF NOT EXISTS `plantel_docente` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `plantel_docente`;
 
+CREATE DATABASE IF NOT EXISTS `plantel_docente` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `plantel_docente`;
+
 DROP TABLE IF EXISTS `docente`;
 
-CREATE TABLE `docente` (
+CREATE TABLE IF NOT EXISTS `docente` (
   `ci` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL,
@@ -41,10 +44,6 @@ CREATE TABLE `docente` (
 LOCK TABLES `docente` WRITE;
 /*!40000 ALTER TABLE `docente` DISABLE KEYS */;
 
-INSERT INTO `docente` (`ci`, `nombre`, `apellido`, `direccion`, `telefono`, `grado_academico`, `estado_laboral`)
-VALUES
-	(1,'asd','asd','asd',123,'',''),
-	(2,'alvaro','molina','america 321',321,'licenciado','activo');
 
 /*!40000 ALTER TABLE `docente` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -55,7 +54,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `materia`;
 
-CREATE TABLE `materia` (
+CREATE TABLE IF NOT EXISTS `materia` (
   `codigo` int(11) NOT NULL,
   `sigla` varchar(45) NOT NULL,
   `nombre` varchar(45) NOT NULL,
@@ -65,9 +64,6 @@ CREATE TABLE `materia` (
 LOCK TABLES `materia` WRITE;
 /*!40000 ALTER TABLE `materia` DISABLE KEYS */;
 
-INSERT INTO `materia` (`codigo`, `sigla`, `nombre`)
-VALUES
-	(102,'MAT-102','matematicas');
 
 /*!40000 ALTER TABLE `materia` ENABLE KEYS */;
 UNLOCK TABLES;

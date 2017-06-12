@@ -88,7 +88,7 @@
 						<div class="field">
 							<label>Dirección</label>
 							<div class="ui corner labeled input">
-								<input type="text" name="direccion" placeholder="Av. América 1234">
+								<input type="text" name="direccion" placeholder="Direccion">
 								<div class="ui corner label">
 									<i class="asterisk icon"></i>
 								</div>

@@ -1,4 +1,7 @@
 <!DOCTYPE HTML>
+<?php
+	
+?>
 
 <html>
 	<link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
