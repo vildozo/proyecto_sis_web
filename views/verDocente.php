@@ -57,6 +57,7 @@
           <i class="user icon"></i>
             Información Básica
         </h3>
+        <img class="ui centered small image" src="../controllers/fotos/<?php echo $row['nombre_foto'] ?>">
         <table class="ui definition table">
           <tbody>
             <tr>
