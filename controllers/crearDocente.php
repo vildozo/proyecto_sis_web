@@ -8,9 +8,12 @@
   $telefono = $_POST['telefono'];
   $grado_academico = $_POST['grado_academico'];
   $estado_laboral = $_POST['estado_laboral'];
+  $formacion_academica = $_POST['formacion_academica'];
+  $formacion_profesional = $_POST['formacion_profesional'];
+  $historial_trabajo = $_POST['historial_trabajo'];
 
-  $sql = "INSERT INTO docente (ci, nombre, apellido, direccion, telefono, grado_academico, estado_laboral)
-  VALUES ('$ci', '$nombre', '$apellido', '$direccion', '$telefono', '$grado_academico', '$estado_laboral')";
+  $sql = "INSERT INTO docente (ci, nombre, apellido, direccion, telefono, grado_academico, estado_laboral, formacion_academica, formacion_profesional, historial_trabajo)
+  VALUES ('$ci', '$nombre', '$apellido', '$direccion', '$telefono', '$grado_academico', '$estado_laboral', '$formacion_academica', '$formacion_profesional', '$historial_trabajo')";
 
   if ($conn->query($sql) === TRUE) {
     header("Location: ../views/gestionarDocentes.php");

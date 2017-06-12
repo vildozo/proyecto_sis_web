@@ -50,6 +50,7 @@
 			<center><h2>Registrar Docente</h2></center>
 			<br>
 			<form class="ui form" method="post" action="../controllers/crearDocente.php">
+				<h3 class="ui dividing header">Información Básica</h3>
 				<div class="field">
 					<div class="four wide field">
 						<label>CI</label>
@@ -88,7 +89,7 @@
 						<div class="field">
 							<label>Dirección</label>
 							<div class="ui corner labeled input">
-								<input type="text" name="direccion" placeholder="Direccion">
+								<input type="text" name="direccion" placeholder="Dirección">
 								<div class="ui corner label">
 									<i class="asterisk icon"></i>
 								</div>
@@ -126,7 +127,18 @@
 						</div>
 					</div>
 				</div>
-				<br>
+				<h3 class="ui dividing header">Formación Académica</h3>
+				<div class="field">
+    			<textarea rows="2" name="formacion_academica" placeholder="Describa las instituciones donde estudió"></textarea>
+  			</div>
+				<h3 class="ui dividing header">Formación Profesional</h3>
+				<div class="field">
+    			<textarea rows="2" name="formacion_profesional" placeholder="Describa los curso de post-grado que realizó"></textarea>
+  			</div>
+				<h3 class="ui dividing header">Historial de Trabajo</h3>
+				<div class="field">
+    			<textarea rows="2" name="historial_trabajo" placeholder="Describa los lugares donde trabajó / trabaja"></textarea>
+  			</div><br>
 				<center>
 					<button type="submit" class="positive ui button" name="registrar_docente">Registrar</button>
 				</center>

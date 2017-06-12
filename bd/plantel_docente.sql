@@ -25,9 +25,6 @@
 CREATE DATABASE IF NOT EXISTS `plantel_docente` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `plantel_docente`;
 
-CREATE DATABASE IF NOT EXISTS `plantel_docente` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `plantel_docente`;
-
 DROP TABLE IF EXISTS `docente`;
 
 CREATE TABLE IF NOT EXISTS `docente` (
@@ -38,6 +35,9 @@ CREATE TABLE IF NOT EXISTS `docente` (
   `telefono` int(11) NOT NULL,
   `grado_academico` varchar(50) NOT NULL,
   `estado_laboral` varchar(50) NOT NULL,
+  `formacion_academica` varchar(350) NOT NULL,
+  `formacion_profesional` varchar(350) NOT NULL,
+  `historial_trabajo` varchar(350) NOT NULL,
   PRIMARY KEY (`ci`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
