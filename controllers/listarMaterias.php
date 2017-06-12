@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
               <input name = 'codigo' type = 'hidden' value = ".$row["codigo"].">
               <input name = 'sigla' type = 'hidden' value = ".$row["sigla"].">
               <input name = 'nombre' type = 'hidden' value = ".$row["nombre"].">
-              <button type='submit' class='ui yellow button'>Editar</button>
+              <button type='submit' class='ui orange button'>Editar</button>
             </form>
             </td>";
         echo "<td>
