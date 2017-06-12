@@ -13,17 +13,17 @@ if ($result->num_rows > 0) {
         echo "<td>".$row['sigla']."</td>";
         echo "<td>".$row['nombre']."</td>";
         echo "<td>
-            <form class='ui form' method = 'post' action = '../controllers/eliminarMateria.php'>
-              <input name = 'sigla' type = 'hidden' value = ".$row["sigla"].">
-              <button type='submit'class= 'ui centered red basic button'>Eliminar</button>
-              </form>
-            </td>";
-        echo "<td>
             <form class='ui form' method = 'post' action = '../controllers/editarMateria.php'>
               <input name = 'codigo' type = 'hidden' value = ".$row["codigo"].">
               <input name = 'sigla' type = 'hidden' value = ".$row["sigla"].">
               <input name = 'nombre' type = 'hidden' value = ".$row["nombre"].">
-              <button type='submit' class='ui yellow basic button'>Editar</button>
+              <button type='submit' class='ui yellow button'>Editar</button>
+            </form>
+            </td>";
+        echo "<td>
+            <form class='ui form' method = 'post' action = '../controllers/eliminarMateria.php'>
+              <input name = 'sigla' type = 'hidden' value = ".$row["sigla"].">
+              <button type='submit'class= 'ui centered red button'>Eliminar</button>
             </form>
             </td>";
     }

@@ -48,7 +48,7 @@
     <div class="ui inverted menu" style="margin:auto; background-color: #0B0B3B;">
       <a class="item">Noticias</a>
       <a class="item">Información General</a>
-      <a class="active item">Plantel Docente</a>
+      <a href="gestionarDocentes.php" class="active item">Plantel Docente</a>
       <a class="item">Cursos de Formación Continua</a>
     </div>
 			<!--Docente-->
@@ -103,7 +103,7 @@
         <p><?php echo $row['formacion_profesional'] ?></p>
         <br>
         <h3 class="ui horizontal divider header">
-          <i class="user icon"></i>
+          <i class="suitcase icon"></i>
             Historial de Trabajo
         </h3>
         <p><?php echo $row['historial_trabajo'] ?></p>

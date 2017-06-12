@@ -50,7 +50,7 @@
 		<div class="ui segment">
 			<center><h2>Lista de Materias</h2></center>
 				<a href="registrarMateria.php" class="ui right floated positive button">Nueva Materia</a>
-			</br>
+			</br><br>
 				<table class="ui celled table">
 				  <thead>
 				    <tr>

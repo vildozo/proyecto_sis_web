@@ -19,6 +19,6 @@
                   <button name='editar_docente' type='submit' class='ui positive button'>Editar</button>
                 </form>
               </td>";
-        }
+    }
     $conn->close();
 ?>
