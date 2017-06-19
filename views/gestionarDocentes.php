@@ -46,9 +46,9 @@
 			<!--Docente-->
 			<div class="ui segment">
 	      <center><h2>Lista de Docentes</h2></center><br>
-					<a href="gestionarMaterias.php" class="ui right floated positive button">Ir a Materias</a>
-					<a href="registrarDocente.php" class="ui right floated positive button">Nuevo Docente</a>
-					<a href="asignarMateriaADocente.php" class="ui right floated positive button">Asignar Materia a Docente</a>
+					<a href="gestionarMaterias.php" class="ui right floated positive button"><i class="arrow right icon"></i> Ir a Materias</a>
+					<a href="registrarDocente.php" class="ui right floated positive button"><i class="plus icon"></i>Nuevo Docente</a>
+					<a href="asignarMateriaADocente.php" class="ui right floated positive button"><i class="exchange icon"></i> Asignar Materia a Docente</a>
 					<br><br>
 					<table class="ui celled table">
 					  <thead>

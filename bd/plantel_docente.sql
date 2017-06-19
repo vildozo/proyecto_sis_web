@@ -21,13 +21,13 @@ CREATE TABLE IF NOT EXISTS `docente` (
   `ci` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL,
-  `direccion` varchar(50) NOT NULL,
+  `direccion` varchar(200) NOT NULL,
   `telefono` int(11) NOT NULL,
   `grado_academico` varchar(50) NOT NULL,
   `estado_laboral` varchar(50) NOT NULL,
-  `formacion_academica` varchar(350) NOT NULL,
-  `formacion_profesional` varchar(350) NOT NULL,
-  `historial_trabajo` varchar(350) NOT NULL,
+  `formacion_academica` varchar(600) NOT NULL,
+  `formacion_profesional` varchar(600) NOT NULL,
+  `historial_trabajo` varchar(600) NOT NULL,
   `nombre_foto` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`ci`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

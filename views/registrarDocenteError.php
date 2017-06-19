@@ -49,6 +49,15 @@
 		<div class="ui segment">
 			<center><h2>Registrar Docente</h2></center>
 			<br>
+			<div class="ui error message">
+  		<div class="header">
+    	No se ha podido realizar el registro debido a uno de los siguientes motivos:
+  		</div>
+			<ul class="list">
+     		<li>Los campos con * son obligatorios.</li>
+     		<li>Nombre y Apellido no deben pasar los 50 caracteres</li>
+   		</ul>
+			</div>
 			<form class="ui form" method="post" enctype="multipart/form-data" action="../controllers/crearDocente.php">
 				<h3 class="ui dividing header">Información Básica</h3>
 				<div class="field">

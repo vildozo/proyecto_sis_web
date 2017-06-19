@@ -179,6 +179,7 @@
         </div><br>
         <center>
           <button type="submit" class="positive ui button" name="editar_docente">Actualizar</button>
+          <a href='gestionarDocentes.php' class='ui negative button'>Cancelar</a>
         </center>
       </form>
     </div>

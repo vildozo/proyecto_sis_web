@@ -45,16 +45,17 @@
   $sql = "INSERT INTO docente (ci, nombre, apellido, direccion, telefono, grado_academico, estado_laboral, formacion_academica, formacion_profesional, historial_trabajo, nombre_foto)
   VALUES ('$ci', '$nombre', '$apellido', '$direccion', '$telefono', '$grado_academico', '$estado_laboral', '$formacion_academica', '$formacion_profesional', '$historial_trabajo', '$nombre_img')";
 
-  foreach ($_POST as $key => $value) {
-    if (empty($value)) {
+
+  if ($ci !=null && $nombre!=null && $apellido!=null && $direccion!=null && $telefono!=null){
+    if ($conn->query($sql) === TRUE) {
       header("Location: ../views/gestionarDocentes.php");
     } else {
-      if ($conn->query($sql) === TRUE) {
-        header("Location: ../views/gestionarDocentes.php");
-      } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-      }
-      $conn->close();
+      echo "Error: " . $sql . "<br>" . $conn->error;
     }
   }
+  else {
+    header("Location: ../views/registrarDocenteError.php");
+  }
+  $conn->close();
+
 ?>
