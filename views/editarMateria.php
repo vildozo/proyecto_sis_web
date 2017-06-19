@@ -48,11 +48,13 @@
 			<a class="item">Cursos de Formación Continua</a>
 		</div>
 
-		<!--Lista de Materias-->
+		<div class='ui segment'>
+	     <center><h2>Editar Materia</h2></center>
+	     </br>
     <?php
       include("../controllers/mostrarFormMateria.php")
      ?>
-    <!--Fin Lista-->
+	</div>
   </div>
   </br>
   </br>
