@@ -3,9 +3,7 @@
 <html>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-	<link rel="stylesheet" type="text/css" href="Styles/Estilos.css">
 	<script src="semantic/dist/semantic.min.js"></script>
-
 	<head>
 		<title>Registar Materia</title>
 	</head>
@@ -51,7 +49,13 @@
         <center><h2>Registrar Materia</h2></center>
       </br>
 			<div class="ui error message">
-  		Todos los campos deben ser llenados.
+  		<div class="header">
+    	No se ha podido realizar el registro debido a uno de los siguientes motivos:
+  		</div>
+			<ul class="list">
+     		<li>Todos los campos deben ser llenados.</li>
+     		<li>Sigla y Nombre no deben pasar los 45 caracteres.</li>
+   		</ul>
 			</div>
         <form  class="ui form" method="post" action="../controllers/crearMateria.php">
           <div class="field">

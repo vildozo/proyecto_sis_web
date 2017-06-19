@@ -7,7 +7,7 @@ $nombre = $_POST['nombre'];
 $sql = "INSERT INTO materia (sigla, nombre)
 VALUES ('$sigla', '$nombre')";
 
-if($sigla!=null && $nombre!=null)
+if($sigla!=null &&  $nombre!=null && strlen($sigla)<46 && strlen($nombre)<46)
 {
     if ($conn->query($sql) === TRUE) {
     header("Location: ../views/gestionarMaterias.php");
