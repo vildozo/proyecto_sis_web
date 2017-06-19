@@ -50,6 +50,9 @@
       <div class="ui segment">
         <center><h2>Registrar Materia</h2></center>
       </br>
+			<div class="ui error message">
+  		Todos los campos deben ser llenados.
+			</div>
         <form  class="ui form" method="post" action="../controllers/crearMateria.php">
           <div class="field">
             <label>Sigla</label>

@@ -49,13 +49,12 @@
 		<!--Lista de Materias-->
 		<div class="ui segment">
 			<center><h2>Lista de Materias</h2></center>
-			<a href="gestionarDocentes.php" class="ui right floated positive button">Ir a Docentes</a>
-				<a href="registrarMateria.php" class="ui right floated positive button">Nueva Materia</a>
+			<a href="gestionarDocentes.php" class="ui right floated positive button"><i class="arrow right icon"></i> Ir a Docentes</a>
+				<a href="registrarMateria.php" class="ui right floated positive button"><i class="plus icon"></i>Nueva Materia</a>
 			</br><br>
 				<table class="ui celled table">
 				  <thead>
 				    <tr>
-				      <th>Código</th>
 				      <th>Sigla</th>
 				      <th>Nombre</th>
 				      <th></th>

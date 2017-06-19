@@ -1,17 +1,22 @@
 <?php
 include("../bd/connection.php");
 
-$codigo = $_POST['codigo'];
 $sigla = $_POST['sigla'];
 $nombre = $_POST['nombre'];
 
-$sql = "INSERT INTO materia (codigo, sigla, nombre)
-VALUES ('$codigo', '$sigla', '$nombre')";
+$sql = "INSERT INTO materia (sigla, nombre)
+VALUES ('$sigla', '$nombre')";
 
-if ($conn->query($sql) === TRUE) {
-  header("Location: ../views/gestionarMaterias.php");
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+if($sigla!=null && $nombre!=null)
+{
+    if ($conn->query($sql) === TRUE) {
+    header("Location: ../views/gestionarMaterias.php");
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+}
+else {
+  header("Location: ../views/registrarMateriaError.php");
 }
 
 $conn->close();
