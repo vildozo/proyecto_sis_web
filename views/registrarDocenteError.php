@@ -141,7 +141,7 @@
   			</div><br>
 				<center>
 					<button type="submit" class="positive ui button" name="registrar_docente" id="registrar_docente">Registrar</button>
-					<button class="negative ui button" name="cancelar">Cancelar</button>
+					<a  href="gestionarDocentes.php" class="negative ui button" name="cancelar">Cancelar</a>
 				</center>
 			</form>
 		</div>

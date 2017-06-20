@@ -1,6 +1,6 @@
 <?php
     include("../bd/connection.php");
-    $sentence = "SELECT ci, nombre, apellido FROM docente";
+    $sentence = "SELECT * FROM docente";
     $result = $conn->query($sentence);
 
     if ($result->num_rows > 0) {

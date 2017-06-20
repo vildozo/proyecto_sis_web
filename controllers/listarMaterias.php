@@ -1,7 +1,7 @@
 <?php
 include("../bd/connection.php");
 
-$sql = "SELECT sigla, nombre FROM materia";
+$sql = "SELECT * FROM materia";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
