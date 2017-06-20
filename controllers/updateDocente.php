@@ -59,11 +59,16 @@
      if($nombre_img == !NULL) echo "La imagen es demasiado grande ";
   }
 
+if ($ci !=null && $nombre!=null && $apellido!=null && $direccion!=null && $telefono!=null && strlen($nombre)<51 && strlen($apellido)<51){
   if ($conn->query($sql) === TRUE) {
     header("Location: ../views/gestionarDocentes.php");
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
+}
+else {
+  header("Location: ../views/editarDocenteError.php");
+}
 
   $conn->close();
 ?>

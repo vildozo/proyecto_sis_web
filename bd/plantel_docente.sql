@@ -19,8 +19,8 @@ USE `plantel_docente`;
 -- Volcando estructura para tabla plantel_docente.docente
 CREATE TABLE IF NOT EXISTS `docente` (
   `ci` int(11) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `apellido` varchar(50) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
   `direccion` varchar(200) NOT NULL,
   `telefono` int(11) NOT NULL,
   `grado_academico` varchar(50) NOT NULL,

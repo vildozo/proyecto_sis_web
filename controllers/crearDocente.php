@@ -33,7 +33,7 @@
       else
       {
          //si no cumple con el formato
-         echo "No se puede subir una imagen con ese formato ";
+         header("Location: ../views/registrarDocenteError.php");
       }
   }
   else
@@ -46,7 +46,11 @@
   VALUES ('$ci', '$nombre', '$apellido', '$direccion', '$telefono', '$grado_academico', '$estado_laboral', '$formacion_academica', '$formacion_profesional', '$historial_trabajo', '$nombre_img')";
 
 
-  if ($ci !=null && $nombre!=null && $apellido!=null && $direccion!=null && $telefono!=null){
+  if ($ci !=null && $nombre!=null && $apellido!=null && $direccion!=null && $telefono!=null
+  && $grado_academico !=null && $estado_laboral!=null && $formacion_academica!=null
+  && $formacion_profesional!= null && $historial_trabajo!=null 
+  && strlen($nombre)<101 && strlen($apellido)<101 &&strlen($direccion)<201 && ctype_alpha($nombre)
+  && ctype_alpha($apellido)){
     if ($conn->query($sql) === TRUE) {
       header("Location: ../views/gestionarDocentes.php");
     } else {

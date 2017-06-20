@@ -54,8 +54,10 @@
     	No se ha podido realizar el registro debido a uno de los siguientes motivos:
   		</div>
 			<ul class="list">
-     		<li>Los campos con * son obligatorios.</li>
-     		<li>Nombre y Apellido no deben pasar los 50 caracteres</li>
+				<li>La el formato de imagen debe ser .jpg, jpeg, .gif o .png.</li>
+     		<li>Todos los campos son obligatorios.</li>
+     		<li>Nombre y Apellido no deben pasar los 100 caracteres</li>
+				<li>Nombre y Apellido deben ser letras de A-Z y a-z</li>
    		</ul>
 			</div>
 			<form class="ui form" method="post" enctype="multipart/form-data" action="../controllers/crearDocente.php">
@@ -69,9 +71,6 @@
 						<label>CI</label>
 						<div class="ui corner labeled input">
 							<input type="number" name="ci" placeholder="Carnet de Identidad">
-							<div class="ui corner label">
-								<i class="asterisk icon"></i>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -81,18 +80,12 @@
 							<label>Nombre</label>
 							<div class="ui corner labeled input">
 								<input type="text" name="nombre" placeholder="Nombre">
-								<div class="ui corner label">
-									<i class="asterisk icon"></i>
-								</div>
 							</div>
 						</div>
 						<div class="field">
 							<label>Apellido</label>
 							<div class="ui corner labeled input">
 								<input type="text" name="apellido" placeholder="Apellido">
-								<div class="ui corner label">
-									<i class="asterisk icon"></i>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -103,18 +96,12 @@
 							<label>Dirección</label>
 							<div class="ui corner labeled input">
 								<input type="text" name="direccion" placeholder="Dirección">
-								<div class="ui corner label">
-									<i class="asterisk icon"></i>
-								</div>
 							</div>
 						</div>
 						<div class="field">
 							<label>Teléfono</label>
 							<div class="ui corner labeled input">
 								<input type="number" name="telefono" placeholder="Teléfono / Celular">
-								<div class="ui corner label">
-									<i class="asterisk icon"></i>
-								</div>
 							</div>
 						</div>
 					</div>
