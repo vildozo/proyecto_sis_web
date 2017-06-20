@@ -48,11 +48,11 @@
 
   if ($ci !=null && $nombre!=null && $apellido!=null && $direccion!=null && $telefono!=null
   && $grado_academico !=null && $estado_laboral!=null && $formacion_academica!=null
-  && $formacion_profesional!= null && $historial_trabajo!=null 
+  && $formacion_profesional!= null && $historial_trabajo!=null
   && strlen($nombre)<101 && strlen($apellido)<101 &&strlen($direccion)<201 && ctype_alpha($nombre)
   && ctype_alpha($apellido)){
     if ($conn->query($sql) === TRUE) {
-      header("Location: ../views/gestionarDocentes.php");
+      header("Location: ../views/registrarDocenteExito.php");
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }
