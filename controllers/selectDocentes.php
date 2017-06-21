@@ -27,12 +27,12 @@ if ($result->num_rows > 0) {
               <strong>Historial de Trabajo:</strong>
 
               <?php echo $row["historial_trabajo"]; ?>
-          
+
           </br>
               <strong>Materias Dicatadas:</strong>
 
-              <?php 
-              $ci= $row["ci"]; 
+              <?php
+              $ci= $row["ci"];
               $sql = "SELECT * FROM materiasDictadas WHERE ci=$ci";
               $materias="";
               $results = $conn->query($sql);
@@ -40,11 +40,12 @@ if ($result->num_rows > 0) {
                 if ($results->num_rows > 0) {
                     // output data of each row
                     while($rows = $results->fetch_assoc()) {
-                      $materias=$materias . "," .  $rows["nombre"];
+                      $materias=$materias.$rows["nombre"]. ', ';
                     }
+                    $materias = trim($materias, ', ').'.';
                     echo $materias;
                   }
-              
+
 
 
               ?>
