@@ -21,12 +21,12 @@ if ($result->num_rows > 0) {
           </br>
               <strong>Formaci&oacute;n Academica:</strong>
 
-              <?php echo $row["formacion_academica"]; ?>
+              <?php echo $row["formacion_academica"].'.'; ?>
 
           </br>
               <strong>Historial de Trabajo:</strong>
 
-              <?php echo $row["historial_trabajo"]; ?>
+              <?php echo $row["historial_trabajo"].'.'; ?>
 
           </br>
               <strong>Materias Dicatadas:</strong>
