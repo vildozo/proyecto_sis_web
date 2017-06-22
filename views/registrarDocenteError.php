@@ -54,7 +54,7 @@
     	No se ha podido realizar el registro debido a uno de los siguientes motivos:
   		</div>
 			<ul class="list">
-				<li>La el formato de imagen debe ser .jpg, jpeg, .gif o .png.</li>
+				<li>El formato de imagen debe ser .jpg, jpeg, .gif o .png.</li>
      		<li>Todos los campos son obligatorios.</li>
      		<li>Nombre y Apellido no deben pasar los 100 caracteres</li>
 				<li>Nombre y Apellido deben ser letras de A-Z y a-z</li>

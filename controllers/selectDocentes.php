@@ -19,7 +19,7 @@ if ($result->num_rows > 0) {
 
                     <a href="#" class="ui header" ><?php echo $row["nombre"]." ".$row["apellido"]; ?></a>
           </br>
-              <strong>Formaci&oacute;n Academica:</strong>
+              <strong>Formaci&oacute;n Académica:</strong>
 
               <?php echo $row["formacion_academica"].'.'; ?>
 
@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
               <?php echo $row["historial_trabajo"].'.'; ?>
 
           </br>
-              <strong>Materias Dicatadas:</strong>
+              <strong>Materias Dictadas:</strong>
 
               <?php
               $ci= $row["ci"];

@@ -43,7 +43,7 @@
 			<a class="item">Cursos de Formación Continua</a>
 		</div>
 	<div class="ui segment">
-	<center><h2>Asignar a Docente Materia</h2></center>
+	<center><h2>Asignar Materia a Docente</h2></center>
 	<form method="POST" action="../controllers/crearAsignacion.php">
 		<table class="ui celled table">
 			<tr>
