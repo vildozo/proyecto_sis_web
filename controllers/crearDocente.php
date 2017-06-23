@@ -50,8 +50,8 @@
   && $grado_academico !=null && $estado_laboral!=null && $formacion_academica!=null
   && $formacion_profesional!= null && $historial_trabajo!=null
   && strlen($nombre)<101 && strlen($apellido)<101 && strlen($direccion)<201
-  && preg_match("/^[\pL\pM\p{Zs}.-]+$/u", $nombre)
-  && preg_match("/^[\pL\pM\p{Zs}.-]+$/u", $apellido)){
+  && preg_match("/^[\pL\pM\p{Zs}]+$/u", $nombre)
+  && preg_match("/^[\pL\pM\p{Zs}]+$/u", $apellido)){
     if ($conn->query($sql) === TRUE) {
       header("Location: ../views/registrarDocenteExito.php");
     } else {
