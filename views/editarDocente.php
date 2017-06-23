@@ -64,7 +64,13 @@
           <div class="field">
   					<div class="four wide field">
               <label>Foto</label>
-  						<input name="imagen" size="30" type="file" />
+              <div class="ui action input">
+  							<input type="text" placeholder="Elija un archivo" readonly>
+  							<input name="imagen" size="30" type="file" style="display:none"/>
+  							<div class="ui icon button">
+  								<i class="image icon"></i>
+  							</div>
+  						</div>
   					</div>
   				</div>
           <div class="field">
@@ -165,6 +171,19 @@
   <script>
     $(document).ready(function (){
       $('.ui.dropdown').dropdown();
+
+      $('.ui.icon.button').click(function() {
+				$('input:file').click();
+			});
+
+			$('input:text').click(function() {
+				$(this).parent().find('input:file').click();
+			})
+
+			$('input:file', '.ui.action.input').on('change', function(e){
+				var fileName = e.target.files[0].name;
+				$('input:text', $(e.target).parent()).val(fileName);
+			});
     });
   </script>
 </br>
