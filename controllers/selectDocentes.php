@@ -20,14 +20,25 @@ if ($result->num_rows > 0) {
             </a>
             </br>
               <strong>Formaci&oacute;n Académica:</strong>
-
-              <?php echo substr($row["formacion_academica"], 0, 200).' ...'; ?>
+              <?php
+                $formacion_academica = $row["formacion_academica"];
+                if (strlen($formacion_academica)>200){
+                  $texto_corto = substr($formacion_academica, 0, 200);
+                  $formacion_academica = substr($texto_corto, 0, strrpos($texto_corto, ' ')).' . . .';
+                }
+                echo $formacion_academica;
+              ?>
 
           </br>
               <strong>Historial de Trabajo:</strong>
-
-              <?php echo substr($row["historial_trabajo"], 0, 200).' ...'; ?>
-
+              <?php
+                $historial_trabajo = $row["historial_trabajo"];
+                if (strlen($historial_trabajo)>200){
+                  $texto_corto = substr($historial_trabajo, 0, 200);
+                  $historial_trabajo = substr($texto_corto, 0, strrpos($texto_corto, ' ')).' . . .';
+                }
+                echo $historial_trabajo;
+              ?>
           </br>
               <strong>Materias Dictadas:</strong>
 
