@@ -44,18 +44,20 @@
 		</div>
 	<div class="ui segment">
 	<center><h2>Asignar Materia a Docente</h2></center>
+	<br><br>
 	<form method="POST" action="../controllers/crearAsignacion.php">
-		<table class="ui celled table">
+		<table class="ui basic table">
 			<tr>
-				<td>
+				<td style="width:40%">
 					<strong> Docente:</strong><?php  include("../controllers/poblandoSelectDocente.php"); ?>
 				</td>
-				<td>
+				<td style="width:40%">
 					<strong> Materia:</strong><?php include("../controllers/poblandoSelectMaterias.php"); ?>
 				</td>
-				<td>
+				<td style="width:10%">
 					<button type="submit" class="positive ui button" name="editar_docente">Asignar</button>
 				</td>
+				<td style="width:10%"><a href="gestionarMaterias.php" class="negative ui button">Cancelar</a></td>
 			</tr>
 
 		</table>
