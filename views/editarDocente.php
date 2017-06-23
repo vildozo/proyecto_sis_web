@@ -48,6 +48,12 @@
       </div>
     </div>
 
+    <div class="ui inverted menu" style="margin:auto; background-color: #0B0B3B;">
+			<a class="item">Noticias</a>
+			<a class="item">Información General</a>
+			<a class="active item">Plantel Docente</a>
+			<a class="item">Cursos de Formación Continua</a>
+		</div>
 
 			<!--Docente-->
       <div class="ui segment">
@@ -56,30 +62,26 @@
         <form class="ui form" method="post" enctype="multipart/form-data" action="../controllers/updateDocente.php">
           <h3 class="ui dividing header">Información Básica</h3>
           <div class="field">
-  					<label>Foto</label>
-  					<input name="imagen" size="30" type="file" />
+  					<div class="four wide field">
+              <label>Foto</label>
+  						<input name="imagen" size="30" type="file" />
+  					</div>
   				</div>
           <div class="field">
             <div class="four wide field">
               <label>CI</label>
-              <div class="ui corner labeled input">
-                <input type="number" name="ci" value="<?php echo $row["ci"];?>" >
-              </div>
+              <input type="number" name="ci" value="<?php echo $row["ci"];?>" >
             </div>
           </div>
           <div class="field">
             <div class="two fields">
               <div class="field">
                 <label>Nombre</label>
-                <div class="ui corner labeled input">
-                  <input type="text" name="nombre" value="<?php echo $row["nombre"];?>">
-                </div>
+                <input type="text" name="nombre" value="<?php echo $row["nombre"];?>">
               </div>
               <div class="field">
-                <label>Apellido</label>
-                <div class="ui corner labeled input">
-                  <input type="text" name="apellido" value="<?php echo $row["apellido"];?>">
-                </div>
+                <label>Apellidos</label>
+                <input type="text" name="apellido" value="<?php echo $row["apellido"];?>">
               </div>
             </div>
           </div>
@@ -87,15 +89,11 @@
             <div class="two fields">
               <div class="field">
                 <label>Dirección</label>
-                <div class="ui corner labeled input">
-                  <input type="text" name="direccion" value="<?php echo $row["direccion"];?>">
-                </div>
+                <input type="text" name="direccion" value="<?php echo $row["direccion"];?>">
               </div>
               <div class="field">
                 <label>Teléfono</label>
-                <div class="ui corner labeled input">
-                  <input type="text" name="telefono" value="<?php echo $row["telefono"];?>">
-                </div>
+                <input type="text" name="telefono" value="<?php echo $row["telefono"];?>">
               </div>
             </div>
           </div>

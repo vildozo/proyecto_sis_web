@@ -52,30 +52,26 @@
 			<form class="ui form" method="post" enctype="multipart/form-data" action="../controllers/crearDocente.php">
 				<h3 class="ui dividing header">Información Básica</h3>
 				<div class="field">
-					<label>Foto</label>
-					<input name="imagen" size="30" type="file" />
+					<div class="four wide field">
+						<label>Foto</label>
+						<input name="imagen" size="30" type="file" />
+					</div>
 				</div>
 				<div class="field">
 					<div class="four wide field">
 						<label>CI</label>
-						<div class="ui corner labeled input">
-							<input type="number" name="ci" placeholder="Carnet de Identidad">
-						</div>
+						<input type="number" name="ci" placeholder="Carnet de Identidad">
 					</div>
 				</div>
 				<div class="field">
 					<div class="two fields">
 						<div class="field">
 							<label>Nombre</label>
-							<div class="ui corner labeled input">
-								<input type="text" name="nombre" placeholder="Nombre">
-							</div>
+							<input type="text" name="nombre" placeholder="Nombre">
 						</div>
 						<div class="field">
-							<label>Apellido</label>
-							<div class="ui corner labeled input">
-								<input type="text" name="apellido" placeholder="Apellido">
-							</div>
+							<label>Apellidos</label>
+							<input type="text" name="apellido" placeholder="Apellidos">
 						</div>
 					</div>
 				</div>
@@ -83,15 +79,11 @@
 					<div class="two fields">
 						<div class="field">
 							<label>Dirección</label>
-							<div class="ui corner labeled input">
-								<input type="text" name="direccion" placeholder="Dirección">
-							</div>
+							<input type="text" name="direccion" placeholder="Dirección">
 						</div>
 						<div class="field">
 							<label>Teléfono</label>
-							<div class="ui corner labeled input">
-								<input type="number" name="telefono" placeholder="Teléfono / Celular">
-							</div>
+							<input type="number" name="telefono" placeholder="Teléfono / Celular">
 						</div>
 					</div>
 				</div>
@@ -100,7 +92,7 @@
 						<div class="field">
 							<label>Grado Académico</label>
 							<select class="ui fluid dropdown" name="grado_academico">
-								<option value="">Seleccione su grado Académico</option>
+								<option value="">Seleccione su grado académico</option>
 							  <option value="Licenciado">Licenciado</option>
 							  <option value="Masterado">Masterado</option>
 							  <option value="Doctorado">Doctorado</option>
@@ -109,7 +101,7 @@
 						<div class="field">
 							<label>Estado Laboral</label>
 							<select class="ui fluid dropdown" name="estado_laboral">
-								<option value="">Seleccione su Estado Laboral</option>
+								<option value="">Seleccione su estado laboral</option>
 							  <option value="Activo">Vigente</option>
 							  <option value="Inactivo">No Vigente</option>
 							</select>
@@ -118,15 +110,15 @@
 				</div>
 				<h3 class="ui dividing header">Formación Académica</h3>
 				<div class="field">
-    			<textarea rows="2" name="formacion_academica" placeholder="Describa las instituciones donde estudió"></textarea>
+    			<textarea rows="2" name="formacion_academica" placeholder="Describa las instituciones donde estudió."></textarea>
   			</div>
 				<h3 class="ui dividing header">Formación Profesional</h3>
 				<div class="field">
-    			<textarea rows="2" name="formacion_profesional" placeholder="Describa los cursos de post-grado que realizó"></textarea>
+    			<textarea rows="2" name="formacion_profesional" placeholder="Describa los cursos de post-grado que realizó."></textarea>
   			</div>
 				<h3 class="ui dividing header">Historial de Trabajo</h3>
 				<div class="field">
-    			<textarea rows="2" name="historial_trabajo" placeholder="Describa los lugares donde trabajó / trabaja"></textarea>
+    			<textarea rows="2" name="historial_trabajo" placeholder="Describa los lugares donde trabajó / trabaja actualmente."></textarea>
   			</div><br>
 				<center>
 					<button type="submit" class="positive ui button" name="registrar_docente" id="registrar_docente">Registrar</button>
