@@ -16,7 +16,7 @@
               <td>
               <form class='ui form' action='../views/verDocente.php'>
                 <input name='ci' type='hidden' value=\"$ci\">
-                  <button name='ver_docente' type='submit' class='ui yellow button'><i class='unhide icon'></i> Ver</button>
+                  <button type='submit' class='ui yellow button'><i class='unhide icon'></i> Ver</button>
                 </form>
               </td>
               <td>

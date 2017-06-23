@@ -15,18 +15,18 @@ if ($result->num_rows > 0) {
             <img class="ui small image" src="../controllers/fotos/<?php echo $row["nombre_foto"] ?>">
           </div>
           <div class="twelve wide column">
-
-
-                    <a href="#" class="ui header" ><?php echo $row["nombre"]." ".$row["apellido"]; ?></a>
-          </br>
+            <a href="../views/verDocente.php?ci=<?php echo $row['ci']; ?>" class="ui header" >
+              <?php echo $row["nombre"]." ".$row["apellido"]; ?>
+            </a>
+            </br>
               <strong>Formaci&oacute;n Académica:</strong>
 
-              <?php echo $row["formacion_academica"].'.'; ?>
+              <?php echo substr($row["formacion_academica"], 0, 200).' ...'; ?>
 
           </br>
               <strong>Historial de Trabajo:</strong>
 
-              <?php echo $row["historial_trabajo"].'.'; ?>
+              <?php echo substr($row["historial_trabajo"], 0, 200).' ...'; ?>
 
           </br>
               <strong>Materias Dictadas:</strong>

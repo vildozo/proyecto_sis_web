@@ -39,7 +39,7 @@
 			<div class="ui inverted menu" style="margin:auto; background-color: #0B0B3B;">
 				<a class="item">Noticias</a>
 				<a class="item">Información General</a>
-				<a class="active item">Plantel Docente</a>
+				<a href="indexDocentes.php" class="active item">Plantel Docente</a>
 				<a class="item">Cursos de Formación Continua</a>
 			</div>
 
